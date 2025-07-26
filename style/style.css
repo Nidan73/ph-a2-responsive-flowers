@@ -117,6 +117,79 @@ header ul,
   margin-top: -740px;
   margin-left: 380px;
 }
+
+.collage-container {
+  margin-top: 570px;
+  text-align: center;
+}
+.collage-container .frame {
+  display: grid;
+  grid-template-areas:
+    "deal1 deal3"
+    "deal2 deal3";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.collage-container .frame1,
+.collage-container .frame2 {
+  display: contents;
+}
+
+.img1,
+.img2,
+.img3 {
+  position: relative;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.img1::before,
+.img2::before,
+.img3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.img1 {
+  grid-area: deal1;
+  background-image: url("../assets/deal-bloom.png");
+}
+.img2 {
+  grid-area: deal2;
+  background-image: url("../assets/deal-ana.png");
+}
+.img3 {
+  grid-area: deal3;
+  background-image: url("../assets/deal-zabo.png");
+}
+
+.img1 h2,
+.img2 h2,
+.img3 h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+.img1 a,
+.img2 a,
+.img3 a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
 @media screen and (max-width: 576px) {
   .link-part1 {
     display: none;
@@ -158,5 +231,18 @@ header ul,
   }
   .Trusted-container > img.hide-mobile {
     display: none;
+  }
+
+  .collage-container {
+    margin-top: 10px;
+  }
+
+  .collage-container .frame {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "deal1"
+      "deal2"
+      "deal3";
   }
 }
