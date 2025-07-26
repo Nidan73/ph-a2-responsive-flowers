@@ -190,6 +190,48 @@ header ul,
   text-decoration: underline;
   font-weight: bold;
 }
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 373px;
+  background: url("../assets/news-letter-bg.png") center/cover no-repeat;
+  width: 100%;
+}
+
+.search-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.search-form {
+  display: flex;
+  margin-top: 1rem;
+  gap: 0;
+}
+
+.searchbar {
+  width: 40.25rem;
+  max-width: 90vw;
+  height: 3rem;
+  padding: 0 1rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+.search-btn {
+  height: 3rem;
+  padding: 0 2rem;
+  background-color: #e95a08;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 @media screen and (max-width: 576px) {
   .link-part1 {
     display: none;
@@ -244,5 +286,22 @@ header ul,
       "deal1"
       "deal2"
       "deal3";
+  }
+  .search-title {
+    font-size: 1.5rem;
+  }
+  .search-form {
+    display: flex;
+    width: 90vw;
+    max-width: 90vw;
+  }
+  .searchbar {
+    width: 70vw;
+    flex: 1;
+    min-width: 0;
+  }
+  .search-btn {
+    flex-shrink: 0;
+    padding: 0 1.5rem;
   }
 }
