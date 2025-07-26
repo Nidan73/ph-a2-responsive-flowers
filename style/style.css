@@ -10,10 +10,19 @@
 body {
   background-color: #f5f8ff;
 }
+
+main > section {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
 .display-flex {
   display: flex;
 }
 
+.color-org {
+  color: rgba(233, 90, 8, 1);
+}
 header {
   max-width: 1140px;
   margin: 0 auto;
@@ -49,7 +58,39 @@ header ul,
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
 }
+.card-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+}
 
+.card-desc {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card-btn {
+  padding: 26px 50px;
+  background-color: #e95a08;
+  color: white;
+  border-style: none;
+  width: 100%;
+}
+
+.card-items {
+  text-align: center;
+}
+.mycards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card-items img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 @media screen and (max-width: 576px) {
   .link-part1 {
     display: none;
@@ -71,5 +112,11 @@ header ul,
   }
   .hero-container {
     flex-direction: column-reverse;
+  }
+
+  .mycards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
