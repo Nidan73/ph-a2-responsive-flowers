@@ -91,6 +91,32 @@ header ul,
   height: auto;
   display: block;
 }
+.trust-title {
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+.trust-flex {
+  display: flex;
+  gap: 60px;
+}
+.Trusted-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trust-desc {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.hide-mobile {
+  height: 286px;
+  width: 286px;
+  margin-top: -740px;
+  margin-left: 380px;
+}
 @media screen and (max-width: 576px) {
   .link-part1 {
     display: none;
@@ -113,10 +139,24 @@ header ul,
   .hero-container {
     flex-direction: column-reverse;
   }
-
   .mycards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .trust-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trust-title {
+    font-size: 1.5rem;
+  }
+  .trust-desc {
+    font-size: 1rem;
+  }
+  .Trusted-container > img.hide-mobile {
+    display: none;
   }
 }
