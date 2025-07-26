@@ -118,6 +118,15 @@ header ul,
   margin-left: 380px;
 }
 
+.collage-title,
+.collage-desc {
+  font-size: 1.2rem;
+}
+
+.collage-desc {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 120px;
+}
 .collage-container {
   margin-top: 570px;
   text-align: center;
